@@ -1,0 +1,32 @@
+{
+  "source": "/mnt/data/cpu_extracted/CPU_Project/output/25_final_econometric_panel.csv",
+  "horizons": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "outcome": "cumulative simple ETF return from t through t+h",
+  "primary_model": "RQ3-aligned ETF fixed-effects specification with hierarchical lower-order interactions and market controls",
+  "robustness": [
+    "ETF and month fixed effects",
+    "one-lag augmented specification"
+  ],
+  "inference": "date-clustered at h=0; grouped-score Driscoll-Kraay Bartlett bandwidth h for h>=1",
+  "negative_variances_clipped": false,
+  "main_etf_threshold": 10,
+  "multiple_testing": [
+    "Holm and BH across primary shock family",
+    "Holm and BH within channel across horizons",
+    "Bonferroni simultaneous bands within channel"
+  ]
+}

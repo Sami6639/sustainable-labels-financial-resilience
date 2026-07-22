@@ -1,0 +1,18 @@
+﻿__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.env
+*.tmp
+raw_nport/
+
+data/raw/sec_raw/
+# Local review and temporary files
+git_status.txt
+*_backup.py
+*.bak
+*.old
+~$*
+manuscript/
+# Raw SEC archives are downloaded separately

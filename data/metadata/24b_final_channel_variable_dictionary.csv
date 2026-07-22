@@ -1,0 +1,9 @@
+VARIABLE,TYPE,FORMULA,THEORY,EXPECTED_CPU_INTERACTION,ROLE
+INTERNAL_FINANCIAL_CAPACITY,Primary non-overlapping mechanism,Equal-weight mean of Z(ROA) and Z(Cash Ratio),Internal liquidity and profitability buffers,Positive or less negative,Primary channel
+EXTERNAL_FINANCING_DEPENDENCE,Primary non-overlapping mechanism,Z(External Finance Dependence),Dependence on external capital and financing constraints,Negative,Primary channel
+GROWTH_DURATION_EXPOSURE_FINAL,Primary non-overlapping mechanism,"Equal-weight mean of Z(CapEx), Z(R&D), and Z(Revenue Growth)",Real options and equity duration,Negative,Primary channel
+PORTFOLIO_CONCENTRATION_FINAL,Primary portfolio-structure mechanism,"Equal-weight mean of Z(HHI), Z(Top10 Weight), and -Z(Effective Number of Holdings)",Diversification and dominant-holding exposure,Negative,Primary channel
+LEVERAGE_EXPOSURE,Restricted robustness mechanism,Z(Portfolio-weighted Leverage),Existing debt burden and refinancing exposure,Negative,Restricted-sample robustness
+FINANCIAL_ARCHITECTURE_RISK_FINAL,Non-overlapping financial composite,- Internal Capacity + External Financing Dependence + Growth-Duration Exposure,Embedded firm-level financial architecture risk,Negative,Composite robustness
+EXTENDED_ARCHITECTURE_RISK_FINAL,Extended architecture composite,- Internal Capacity + External Financing Dependence + Growth-Duration Exposure + Concentration,Firm financial architecture and portfolio structure,Negative,Secondary robustness
+PCA_COMPONENT_1,Data-driven robustness factor,First principal component of four main channels,Common latent architecture dimension,Based on economically oriented loadings,PCA robustness

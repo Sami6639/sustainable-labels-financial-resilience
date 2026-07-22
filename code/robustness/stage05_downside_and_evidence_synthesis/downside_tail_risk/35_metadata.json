@@ -1,0 +1,11 @@
+{
+  "crash_thresholds": "ETF-specific full-sample 10th and 5th percentiles; distributional classification, not an ex-ante forecast",
+  "panel_outcomes": [
+    "crash probability LPM",
+    "negative semireturn",
+    "tail shortfall below ETF q10"
+  ],
+  "quantile": "pooled tau=0.10 quantile regression with ETF fixed-effect dummies",
+  "quantile_bootstrap": "99 moving six-month blocks, seed family 20260715",
+  "primary_inference": "ETF FE/date cluster; ETF+month FE/ETF cluster robustness"
+}

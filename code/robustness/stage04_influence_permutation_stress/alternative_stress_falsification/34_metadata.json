@@ -1,0 +1,33 @@
+{
+  "primary_inference": "ETF fixed effects with date-clustered standard errors",
+  "month_fe_robustness": "ETF and month fixed effects with ETF-clustered standard errors",
+  "thresholds": [
+    "top 10%",
+    "top 20%",
+    "top 25%"
+  ],
+  "alternative_cpu": [
+    "log narrow CPU",
+    "CPU difference",
+    "CPU percentage change",
+    "broad CPU",
+    "LLM CPU",
+    "official external shock"
+  ],
+  "falsification": [
+    "future CPU leads",
+    "low/high VIX subsamples",
+    "non-joint-stress subsample"
+  ],
+  "sample_exclusions": [
+    "FULL_SAMPLE",
+    "EXCLUDE_2020",
+    "EXCLUDE_2022",
+    "EXCLUDE_2020_2022",
+    "EXCLUDE_PANDEMIC_2020M03_2021M12",
+    "PRE_2020",
+    "POST_2020",
+    "POST_2015",
+    "POST_2017"
+  ]
+}

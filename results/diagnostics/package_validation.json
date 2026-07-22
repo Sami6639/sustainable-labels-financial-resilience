@@ -1,0 +1,31 @@
+{
+  "panel_rows": 4459,
+  "panel_columns": 806,
+  "unique_etfs": 50,
+  "unique_months": 192,
+  "date_min": "2010-01-31",
+  "date_max": "2025-12-31",
+  "duplicate_etf_month_rows": 0,
+  "firm_year_rows": 27312,
+  "unique_firms": 2174,
+  "duplicate_firm_year_rows": 0,
+  "historical_architecture_rows": 185,
+  "historical_snapshots": [
+    "2023Q4",
+    "2024Q4",
+    "2025Q4"
+  ],
+  "persistent_score_rows": 66,
+  "persistent_unique_etfs": 66,
+  "complete_three_snapshot_etfs": 56,
+  "expected_checks": {
+    "panel_rows": true,
+    "unique_etfs": true,
+    "unique_months": true,
+    "firm_year_rows": true,
+    "unique_firms": true,
+    "duplicate_etf_month_rows": true,
+    "complete_three_snapshot_etfs": true
+  },
+  "validation_passed": true
+}

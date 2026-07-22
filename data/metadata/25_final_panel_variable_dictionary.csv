@@ -1,0 +1,24 @@
+VARIABLE,TYPE,FORMULA,THEORY,RESEARCH_QUESTION
+ETF_RETURN,Dependent variable,Monthly percentage change in adjusted month-end price,Conditional ETF pricing,RQ1–RQ4
+CPU_Z,Standardized climate-policy uncertainty,(CPU - sample mean) / sample standard deviation,Common external climate-policy uncertainty shock,RQ1–RQ4
+CPU_AND_VIX_STRESS,Joint stress-state indicator,1 when both CPU and VIX are at or above their 75th percentiles,Market stress activates latent architecture exposure,RQ3
+CUM_RETURN_LEAD3,Forward recovery outcome,Cumulative ETF return from t+1 through t+3,Post-shock recovery dynamics,RQ4
+CUM_RETURN_LEAD6,Forward recovery outcome,Cumulative ETF return from t+1 through t+6,Medium-horizon recovery dynamics,RQ4
+CUM_RETURN_LEAD12,Forward recovery outcome,Cumulative ETF return from t+1 through t+12,Longer-horizon recovery dynamics,RQ4
+FROZEN_ARCHITECTURE_FLAG,Research-design disclosure,1 for all observations using the 2025Q4 holdings architecture snapshot,Current architecture used as persistent exposure proxy,Methodological disclosure
+CPU_Z_X_INTERNAL_FINANCIAL_CAPACITY_MAIN,Conditional-pricing interaction,CPU_Z × INTERNAL_FINANCIAL_CAPACITY_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_INTERNAL_FINANCIAL_CAPACITY_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × INTERNAL_FINANCIAL_CAPACITY_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_EXTERNAL_FINANCING_DEPENDENCE_MAIN,Conditional-pricing interaction,CPU_Z × EXTERNAL_FINANCING_DEPENDENCE_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_EXTERNAL_FINANCING_DEPENDENCE_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × EXTERNAL_FINANCING_DEPENDENCE_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_GROWTH_DURATION_EXPOSURE_FINAL_MAIN,Conditional-pricing interaction,CPU_Z × GROWTH_DURATION_EXPOSURE_FINAL_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_GROWTH_DURATION_EXPOSURE_FINAL_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × GROWTH_DURATION_EXPOSURE_FINAL_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_PORTFOLIO_CONCENTRATION_FINAL_MAIN,Conditional-pricing interaction,CPU_Z × PORTFOLIO_CONCENTRATION_FINAL_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_PORTFOLIO_CONCENTRATION_FINAL_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × PORTFOLIO_CONCENTRATION_FINAL_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_FINANCIAL_ARCHITECTURE_RISK_FINAL_MAIN,Conditional-pricing interaction,CPU_Z × FINANCIAL_ARCHITECTURE_RISK_FINAL_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_FINANCIAL_ARCHITECTURE_RISK_FINAL_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × FINANCIAL_ARCHITECTURE_RISK_FINAL_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_EXTENDED_ARCHITECTURE_RISK_FINAL_MAIN,Conditional-pricing interaction,CPU_Z × EXTENDED_ARCHITECTURE_RISK_FINAL_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_EXTENDED_ARCHITECTURE_RISK_FINAL_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × EXTENDED_ARCHITECTURE_RISK_FINAL_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_LEVERAGE_EXPOSURE_MAIN,Conditional-pricing interaction,CPU_Z × LEVERAGE_EXPOSURE_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_LEVERAGE_EXPOSURE_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × LEVERAGE_EXPOSURE_MAIN,Market stress activates latent architecture exposure,RQ3
+CPU_Z_X_PCA_COMPONENT_1_MAIN,Conditional-pricing interaction,CPU_Z × PCA_COMPONENT_1_MAIN,Climate-policy uncertainty is transmitted through embedded portfolio architecture,RQ1 or RQ2
+CPU_VIX_STRESS_X_PCA_COMPONENT_1_MAIN,Stress-activation interaction,CPU_AND_VIX_STRESS × PCA_COMPONENT_1_MAIN,Market stress activates latent architecture exposure,RQ3

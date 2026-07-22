@@ -1,0 +1,12 @@
+{
+  "additional_market_data": "monthly QQQ, SPY and USO returns from uploaded broad ESG archive",
+  "growth_factor": "QQQ minus SPY",
+  "architecture_beta_controls": [
+    "market x architecture",
+    "growth factor x architecture",
+    "energy x architecture",
+    "Treasury x architecture",
+    "oil x architecture"
+  ],
+  "purpose": "test whether holdings-based architecture activation is subsumed by general growth, market, energy, duration or oil factor exposures"
+}

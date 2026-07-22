@@ -1,0 +1,12 @@
+{
+  "total_models": 1092,
+  "reliable_main_inference_models": 780,
+  "exploratory_reliable_models": 312,
+  "invalid_or_failed_models": 0,
+  "primary_channels": 4,
+  "horizons": 13,
+  "model_variants": 3,
+  "shock_definitions": 4,
+  "figures_png": 12,
+  "figures_pdf": 12
+}

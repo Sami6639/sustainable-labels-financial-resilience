@@ -1,0 +1,12 @@
+{
+  "source": "/mnt/data/cpu_extracted/CPU_Project/output/25_final_econometric_panel.csv",
+  "sorting": "fixed 2025Q4 architecture assignment",
+  "primary_sort": "median split",
+  "robustness_sort": "top-minus-bottom tercile",
+  "weights": "equal weighted",
+  "sample_designs": [
+    "available cross-section",
+    "balanced common window"
+  ],
+  "inference": "Newey-West HAC, 3 lags"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "/mnt/data/cpu_extracted/CPU_Project/output/25_final_econometric_panel.csv",
+  "first_stage": "monthly cross-sectional OLS of ETF return on standardized architecture score",
+  "outcomes": [
+    "raw ETF return",
+    "ETF-specific four-factor residual return"
+  ],
+  "sample_designs": [
+    "available cross-section",
+    "months with at least 10 ETFs",
+    "balanced common window"
+  ],
+  "second_stage": "Newey-West/HAC with 3 monthly lags",
+  "primary_tests": [
+    "continuous CPU x VIX activation",
+    "joint stress increment"
+  ],
+  "main_cross_section_threshold": 10
+}

@@ -1,0 +1,11 @@
+{
+  "replications": 5000,
+  "seed": 20260715,
+  "assignment": "shuffle frozen ETF-level architecture scores across eligible ETFs while preserving ETF histories and common shocks",
+  "p_values": [
+    "two-sided",
+    "theory-directed",
+    "approximate Romano-Wolf stepdown across four channels within each test family"
+  ],
+  "balanced_robustness": "common dates with all eligible ETFs, if at least 24 months"
+}

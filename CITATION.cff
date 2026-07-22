@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+
+message: "If you use this repository, please cite the associated replication package."
+
+title: "Replication Package for Sustainable Labels and Financial Resilience"
+
+type: software
+
+authors:
+  - family-names: "Küçükoğlu"
+    given-names: "Sami"
+    affiliation: "Istanbul Ticaret University"
+    email: "skucukoglu@ticaret.edu.tr"
+
+  - family-names: "Küçükvar"
+    given-names: "Murat"
+    affiliation: "Qatar University"
+    email: "mkucukvar@qu.edu.qa"
+
+version: "1.0.0"
+
+date-released: "2026-07-22"
+
+license: MIT
+
+keywords:
+  - sustainable finance
+  - climate policy uncertainty
+  - exchange-traded funds
+  - portfolio architecture
+  - financial resilience
+  - empirical finance
+  - reproducibility
+
+abstract: >
+  Replication package accompanying the study
+  "Sustainable Labels and Financial Resilience:
+  Portfolio Architecture under Climate Policy Uncertainty."
+  The repository contains analysis-ready data,
+  replication code, documentation, diagnostics,
+  robustness analyses, and publication outputs
+  required to reproduce and verify the empirical results.

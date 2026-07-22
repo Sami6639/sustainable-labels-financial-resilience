@@ -1,0 +1,5 @@
+[2026-07-15 17:13:18] 2025Q4: holdings extraction started.
+[2026-07-15 17:13:18] 2025Q4: 13328 fund rows read; 159 candidate ETFs identified.
+[2026-07-15 17:13:40] 2025Q4: 5105506 holding rows scanned; 63867 candidate holding rows retained.
+[2026-07-15 17:14:08] 2025Q4: 6382840 identifier rows scanned; 84415 identifier rows matched.
+[2026-07-15 17:14:09] 2025Q4: outputs saved successfully. Rows=63867, ETFs=159.

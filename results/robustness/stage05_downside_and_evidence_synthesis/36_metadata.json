@@ -1,0 +1,10 @@
+{
+  "primary_families": {
+    "core_activation": "four channels x continuous and threshold activation; Holm/BH within test and across all eight",
+    "dynamic": "Holm/BH and Bonferroni trajectory inference inherited from Script 29",
+    "supporting": "Fama-MacBeth, sorted portfolios, downside panels and quantile regressions treated as separate families"
+  },
+  "nonparametric": "permutation p-values and approximate Romano-Wolf stepdown merged into core ledger",
+  "influence": "leave-one-ETF-out sign and significance preservation merged",
+  "style_controls": "growth-factor, oil and architecture-factor-beta controls merged"
+}

@@ -1,0 +1,30 @@
+VARIABLE,SOURCE,FORMULA,THEORY,RESEARCH_QUESTION,EXPECTED_SIGN
+HHI,ETF holding weights,sum(weight_j^2),Portfolio concentration,"RQ1, RQ3",Higher concentration may amplify CPU exposure
+TOP10_WEIGHT,ETF holding weights,Sum of ten largest holding weights,Dominant-firm concentration,"RQ1, RQ3",Higher concentration may amplify CPU exposure
+EFFECTIVE_NUMBER_OF_HOLDINGS,ETF holding weights,1 / HHI,Effective diversification,"RQ1, RQ3",Greater diversification may attenuate exposure
+FINANCIAL_MATCH_WEIGHT,Matched firm-characteristic holding weights,Sum of matched holding weights,Measurement reliability,All,Not an economic sign prediction
+ARCHITECTURE_STABILITY,Consecutive holdings snapshots,1 - 0.5 * sum(abs(weight_t - weight_t-1)),Persistence of embedded portfolio exposure,"RQ1, RQ4",Conditional
+PW_ROA,ROA_W,Weighted firm characteristic with available-weight renormalization,Profitability and operating resilience,"RQ2, RQ3, RQ4",Positive or less negative
+COV_ROA,ROA_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_ROA,ROA_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_LEVERAGE,LEVERAGE_W,Weighted firm characteristic with available-weight renormalization,Financing constraints and fixed obligations,"RQ2, RQ3",Negative
+COV_LEVERAGE,LEVERAGE_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_LEVERAGE,LEVERAGE_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_CASH_RATIO,CASH_RATIO_W,Weighted firm characteristic with available-weight renormalization,Financial flexibility and liquidity buffers,"RQ2, RQ3, RQ4",Positive or less negative
+COV_CASH_RATIO,CASH_RATIO_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_CASH_RATIO,CASH_RATIO_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_CAPEX_INTENSITY,CAPEX_INTENSITY_W,Weighted firm characteristic with available-weight renormalization,Real options and irreversible investment,"RQ2, RQ4",Conditional
+COV_CAPEX_INTENSITY,CAPEX_INTENSITY_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_CAPEX_INTENSITY,CAPEX_INTENSITY_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_RD_INTENSITY,RD_INTENSITY_W,Weighted firm characteristic with available-weight renormalization,Growth options and equity duration,"RQ2, RQ4",Potentially negative
+COV_RD_INTENSITY,RD_INTENSITY_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_RD_INTENSITY,RD_INTENSITY_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_REVENUE_GROWTH,REVENUE_GROWTH_W,Weighted firm characteristic with available-weight renormalization,Growth exposure and operating expansion,RQ2,Conditional
+COV_REVENUE_GROWTH,REVENUE_GROWTH_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_REVENUE_GROWTH,REVENUE_GROWTH_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_EXTERNAL_FINANCE_DEPENDENCE,EXTERNAL_FINANCE_DEPENDENCE_W,Weighted firm characteristic with available-weight renormalization,Dependence on external capital markets,"RQ2, RQ3",Negative
+COV_EXTERNAL_FINANCE_DEPENDENCE,EXTERNAL_FINANCE_DEPENDENCE_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_EXTERNAL_FINANCE_DEPENDENCE,EXTERNAL_FINANCE_DEPENDENCE_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional
+PW_LOG_ASSETS,LOG_ASSETS_W,Weighted firm characteristic with available-weight renormalization,"Firm size, information environment and financing access","RQ2, RQ3",Positive or less negative
+COV_LOG_ASSETS,LOG_ASSETS_W,Sum of portfolio weights with available characteristic,Characteristic-specific measurement coverage,All,Not an economic sign prediction
+DISP_LOG_ASSETS,LOG_ASSETS_W,Weighted within-portfolio standard deviation,Firm-level heterogeneity embedded in the ETF,"RQ1, RQ2, RQ3",Conditional

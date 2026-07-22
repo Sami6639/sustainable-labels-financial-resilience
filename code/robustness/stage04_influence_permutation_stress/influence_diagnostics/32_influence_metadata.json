@@ -1,0 +1,23 @@
+{
+  "source": "25_final_econometric_panel.csv",
+  "channels": [
+    "INTERNAL_FINANCIAL_CAPACITY",
+    "EXTERNAL_FINANCING_DEPENDENCE",
+    "GROWTH_DURATION_EXPOSURE_FINAL",
+    "PORTFOLIO_CONCENTRATION_FINAL"
+  ],
+  "shocks": [
+    "CPU_VIX_CONTINUOUS",
+    "CPU_AND_VIX_STRESS",
+    "EXTREME_CPU_REGIME"
+  ],
+  "horizons": [
+    0,
+    3,
+    6,
+    9,
+    12
+  ],
+  "model": "RQ3-aligned ETF fixed effects; date-clustered at h=0 and Driscoll-Kraay bandwidth h at h>0",
+  "purpose": "diagnose whether individual ETFs drive impact and recovery estimates"
+}

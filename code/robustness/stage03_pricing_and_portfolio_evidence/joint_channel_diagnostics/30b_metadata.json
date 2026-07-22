@@ -1,0 +1,15 @@
+{
+  "purpose": "separate channels whose static architecture scores are materially correlated",
+  "pairs": {
+    "CAPACITY_VS_GROWTH": [
+      "INTERNAL_FINANCIAL_CAPACITY",
+      "GROWTH_DURATION_EXPOSURE_FINAL"
+    ],
+    "FINANCING_VS_CONCENTRATION": [
+      "EXTERNAL_FINANCING_DEPENDENCE",
+      "PORTFOLIO_CONCENTRATION_FINAL"
+    ]
+  },
+  "inference": "date cluster h0; DK bandwidth h for cumulative h>=1",
+  "negative_variances_clipped": false
+}
