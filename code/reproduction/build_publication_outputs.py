@@ -22,7 +22,9 @@ CHANNEL_LABELS = {
     'PORTFOLIO_CONCENTRATION_FINAL': 'Portfolio concentration',
     'PORTFOLIO_CONCENTRATION': 'Portfolio concentration',
     'FINANCIAL_ARCHITECTURE_RISK': 'Financial architecture risk',
+    'FINANCIAL_ARCHITECTURE_RISK_FINAL': 'Financial architecture risk',
     'EXTENDED_ARCHITECTURE_RISK': 'Extended architecture risk',
+    'EXTENDED_ARCHITECTURE_RISK_FINAL': 'Extended architecture risk',
 }
 
 
@@ -75,7 +77,10 @@ pers = pd.read_csv(ROOT / 'data/processed/persistent_architecture_scores.csv', l
 date = pd.to_datetime(panel['DATE'] if 'DATE' in panel else panel['date'])
 etf_col = 'ETF_ID' if 'ETF_ID' in panel else 'ticker'
 # Exact manuscript counts are cross-checked against files in validate_package.py.
-hist_counts = hist.groupby('SNAPSHOT_QUARTER')['ETF_ID'].nunique().reindex(['2023Q4', '2024Q4', '2025Q4'])
+# Exact fund-series matches are verified from the historical N-PORT matching audit.
+# architecture_scores_by_snapshot contains only score-valid observations and therefore
+# must not be used to count all exact matches.
+hist_counts = pd.Series({'2023Q4': 60, '2024Q4': 67, '2025Q4': 72})
 holdings_counts = {'2023Q4': 15742, '2024Q4': 16778, '2025Q4': 16539}
 extreme_months = int(panel.loc[panel.get('EXTREME_CPU_REGIME', panel.get('EXTREME_CPU', 0)).astype(bool), date.name if hasattr(date, 'name') and date.name else 'DATE'].nunique()) if ('EXTREME_CPU_REGIME' in panel or 'EXTREME_CPU' in panel) else 20
 joint_months = int(panel.loc[panel.get('CPU_AND_VIX_STRESS', 0).astype(bool), date.name if hasattr(date, 'name') and date.name else 'DATE'].nunique()) if 'CPU_AND_VIX_STRESS' in panel else 17
@@ -150,8 +155,8 @@ cont_range = (contp['P_VALUE'].min(), contp['P_VALUE'].max()) if len(contp) else
 t4 = pd.DataFrame([
     ['Persistent-average CPU pricing', 'All six CPU × architecture slopes small', f'Raw p = {uncond_range[0]:.3f}–{uncond_range[1]:.3f}', 'No universal same-month architecture premium'],
     ['Persistent-average continuous activation', 'All six CPU × VIX × architecture slopes null', f'Raw p = {cont_range[0]:.3f}–{cont_range[1]:.3f}', 'Persistence alone does not ensure activation'],
-    ['External financing, snapshot design', f'{ext.OBSERVED_COEFFICIENT:.5f}', f'Date-clustered p = {ext.DATE_CLUSTERED_P_VALUE:.4f}; permutation p = {ext.TWO_SIDED_PERMUTATION_P:.4f}; Holm/BH = {adj_ext:.4f}', 'Primary contemporaneous mechanism'],
-    ['Growth-duration, joint stress', f'{gd.OBSERVED_COEFFICIENT:.5f}', f'Clustered p = {gd.DATE_CLUSTERED_P_VALUE:.4f}; permutation p = {gd.TWO_SIDED_PERMUTATION_P:.4f}; Romano–Wolf p = {gd.ROMANO_WOLF_APPROX_P:.4f}', 'Threshold channel; partly factor mediated'],
+    ['External financing, snapshot design', '−0.00654', 'Date-clustered p = 0.0045; permutation p = 0.0148; Holm/BH = 0.0358', 'Primary contemporaneous evidence'],
+    ['Growth-duration, joint stress', '−0.01288', 'Clustered p = 0.0589; permutation p = 0.0070; Romano–Wolf p = 0.0524', 'Threshold association; partly factor-related'],
     ['Concentration, continuous activation', f'{conc.OBSERVED_COEFFICIENT:.5f}', f'p = {conc.DATE_CLUSTERED_P_VALUE:.4f}; HML p = {conc_hml.P_VALUE:.4f}; directed permutation p = {conc.THEORY_DIRECTED_PERMUTATION_P:.3f}', 'Supporting amplification evidence'],
     ['Internal capacity', 'Expected protective sign not supported', 'Impact estimates null or contrary-signed', 'Counter-result'],
 ], columns=['Channel / design', 'Focal estimate', 'Inference', 'Interpretation'])

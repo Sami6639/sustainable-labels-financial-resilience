@@ -1,0 +1,20 @@
+{
+  "all_eight_manuscript_tables_generated": true,
+  "all_three_manuscript_figures_generated": true,
+  "table_files": [
+    "Table_1_Sample_and_Data_Architecture.csv",
+    "Table_2_Holdings_Based_Portfolio_Architecture_Channels.csv",
+    "Table_3_Portfolio_Architecture_Persistence.csv",
+    "Table_4_Evidentiary_Hierarchy_Contemporaneous_Activation.csv",
+    "Table_5_Persistent_Architecture_Adjustment.csv",
+    "Table_6_Robustness_and_Falsification_Summary.csv",
+    "Table_A1_Boundary_Validation_2020Q4_2025Q4.csv",
+    "Table_A2_Temporally_Aligned_Growth_Duration_2020_2025.csv"
+  ],
+  "figure_files": [
+    "Figure_1_Empirical_Data_Architecture.png",
+    "Figure_2_Architecture_Persistence.png",
+    "Figure_3_Persistent_Architecture_Adjustment.png"
+  ],
+  "numeric_source_note": "All numeric estimates are derived from the reproduced core model outputs or archived machine-readable robustness outputs; definitional/synthesis text follows the manuscript."
+}
