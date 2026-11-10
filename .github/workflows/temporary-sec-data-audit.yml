@@ -1,0 +1,21 @@
+name: Internal SEC Facts Reuse Audit
+on:
+  push:
+    branches: [temporary-sec-data-audit-2026]
+  workflow_dispatch:
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check derived SEC dataset
+        run: |
+          test -s data/processed/firm_characteristics_annual.csv
+          head -n 2 data/processed/firm_characteristics_annual.csv | cut -c1-500
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sec-derived-firm-financials
+          retention-days: 1
+          path: |
+            data/processed/firm_characteristics_annual.csv
+            data/metadata/15_portfolio_architecture_variable_dictionary.csv
