@@ -11,6 +11,7 @@ jobs:
       - name: Check derived SEC dataset
         run: |
           test -s data/processed/firm_characteristics_annual.csv
+          test -s data/processed/nport_holdings_2025q4.parquet
           head -n 2 data/processed/firm_characteristics_annual.csv | cut -c1-500
       - uses: actions/upload-artifact@v4
         with:
@@ -18,4 +19,5 @@ jobs:
           retention-days: 1
           path: |
             data/processed/firm_characteristics_annual.csv
+            data/processed/nport_holdings_2025q4.parquet
             data/metadata/15_portfolio_architecture_variable_dictionary.csv
